@@ -1,4 +1,4 @@
-# Noob-ernetes
+# n00bernetes
 Learning Kubernetes locally with Minikube. 
 
 **Not for production.**
