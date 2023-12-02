@@ -12,10 +12,10 @@ app.post("/events", async (req, res) => {
 
     events.push(event);
     
-    axios.post("http://localhost:4000/events", event).catch(_ => {})
-    axios.post("http://localhost:4001/events", event).catch(_ => {})
-    axios.post("http://localhost:4002/events", event).catch(_ => {})
-    axios.post("http://localhost:4003/events", event).catch(_ => {})
+    axios.post("http://posts-clusterip-srv:4000/events", event).catch(_ => {})
+    axios.post("http://comments-srv:4001/events", event).catch(_ => {})
+    axios.post("http://query-srv:4002/events", event).catch(_ => {})
+    axios.post("http://moderation-srv:4003/events", event).catch(_ => {})
     
     res.send({ status: "OK" });
 })
