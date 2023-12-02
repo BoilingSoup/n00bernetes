@@ -16,7 +16,7 @@ When new data is created, the data is duplicated in the **Query** service's DB, 
 
 <hr/>
 
-When the functionality was implemented, I Dockerized the applications so I can create **deployments** with Kubernetes. 
+I Dockerized the applications so I can create **deployments** with Kubernetes. 
 
 The pods of different microservices communicate with each other via HTTP requests to Cluster IP Services. 
 
